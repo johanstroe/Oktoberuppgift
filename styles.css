@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+   
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  -webkit-tap-highlight-color: black;
+  font-family: "Manrope";
+
+
+}
+
+.sida1 {
+
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-top:1rem;
+  
+}
+
+.section1 {
+  background: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+  background-attachment: fixed;
+  background-size:cover;
+  margin-top:0;
+  display:flex;
+}
+
+
+
+
+body {  
+  font-family: "Manrope"; 
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size:1rem;
+  gap:1rem;
+  
+}
+
+.toggle {
+  display:flex;
+  align-items: center;
+  margin-left:21rem;
+   
+}
+
+.dark-mode {
+  
+  background-color: black;
+  color:white;
+  a {
+    color:white;
+  }
+}
+
+a {
+  text-decoration: none;
+  color:#33354D
+}
+
+a:hover {
+  color:gray;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+
+.cardstyles2 {
+  display:flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 22rem;
+  }
+
+
+
+ 
+.silicon {
+  margin-left:20rem;
+  margin-right:3rem;
+      
+}
+
+#Features {
+  font-weight:600;
+  font-size:1rem;
+  margin-right:5rem;
+    
+  }
+
+.ManageMoney {
+  
+  margin-top:15rem;
+  margin-left:26rem;
+  max-width:27rem;
+  font-size:3rem;
+  font-weight:800;
+
+}
+
+.Weoffer {
+
+  font-size:18px;
+  margin-left:26rem;
+  max-width:30rem;
+  font-weight: normal;
+  margin-bottom:0;
+  
+}
+
+.appstoresetup {
+  position:absolute;
+  align-items: center;
+  gap:1rem;
+  margin-left:23rem;
+  margin-top:30rem;
+  margin-right:1rem;
+
+}
+
+.discovery {
+
+  transform:translateY(50rem);
+  bottom:0;
+  left:0;
+  
+}
+
+.googleplay {
+
+margin-left:1rem;
+}
+
+.hero {
+
+  position:flex;
+  margin-left:8rem;
+  margin-top:12rem;
+    
+}
+
+.signup {
+  display:flex;
+  align-items: center;
+  border: 2rem #6366F1;
+  background-color: #6366F1;
+  border-radius: .3rem;
+  padding: .5rem 2rem;
+  max-width:10rem;
+    
+}
+
+.signup a {
+  display:flex;
+  align-items: center;
+  color:#ffff;
+  width:5.5rem;
+    
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  }
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-text {
+  margin-right:.5rem;
+  font-weight: 500;
+      
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4rem;
+  width: 1.5rem;
+  left: 0.2rem;
+  bottom: 0.4rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+
+ .slider.round {
+  border-radius: 34px;
+ }
+
+ .slider.round:before {
+  border-radius:50%;
+ }
+ 
+ input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.section2 {
+  background-color: #ffff;
+
+}
+ 
+.card {
+  
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 0.4rem;
+  background-color: white;
+  padding: 2rem 2rem;
+  height:100px;
+  width:200px;  
+}
+
+/* #card3 {
+  padding:.4rem;
+} */
+
+.phonevisacard {
+
+  display:flex;
+  align-items: Center;
+  gap:25rem;
+  margin-left:21rem;
+  margin-top:3rem;
+}
+
+.textwithinformation {
+  display: grid;
+  grid-row: auto;
+  font-size: 2.5rem;
+     
+}
+
+.textwithicons {
+  display:grid;
+  font-size:1.5rem;
+  font-weight:bold;
+}
+
+.informationtext {
+  font-size:1rem;
+  max-width: 39rem;
+  margin-bottom:2rem;
+  margin-top:1rem;
+  font-weight: 100;
+  align-items: center;
+  color: #9397AD
+}
+
+.iconcontainer {
+display:grid;
+grid-template-columns: auto 1fr;
+ 
+align-items: center;
+margin-right:25rem;
+
+}
+
+.iconcontainer img {
+  max-width: 100px;
+  height:auto;
+  margin-right:0
+}
+
+
+
+
+
+
+
+
