@@ -1,71 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-   
+
 * {
   box-sizing: border-box;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   -webkit-tap-highlight-color: black;
   font-family: "Manrope";
 
 
 }
 
+
 .sida1 {
 
-  display:flex;
+  /* background-color: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%); */
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
   align-items: center;
-  margin-top:1rem;
-  margin-bottom:10rem;
   justify-content: center;
-  gap:1rem;
-  
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+
+
+
 }
+
+#item1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#item2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
 
 .section1 {
-  background: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
-  background-attachment: fixed;
-  background-size:cover;
-  margin-top:0;
+
+  margin-top: 0;
   align-items: center;
-  display:flex;
+  display: flex;
+  background: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+}
+
+
+.title2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: .5rem;
+  margin-right: 10rem;
+
+}
+
+.headlinetext {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.Apptext {
+  max-width: 700px;
+  margin-left: 15rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #9397AD;
 }
 
 
 
+.gridcolumns {
+  display: grid;
+  align-items: center;
+  margin-top: 3rem;
+  margin-left: 16rem;
 
-body {  
-  font-family: "Manrope"; 
+}
+
+.itemclass {
+  display: grid;
+  gap: 1rem;
+  margin-top: 5rem;
+
+
+  img {
+    grid-column: auto;
+    grid-row: 1 / 3;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    grid-column: 2 / 4;
+
+  }
+
+  p {
+    max-width: 250px;
+  }
+}
+
+#cardiconen {
+  grid-row: 1 / 4;
+}
+
+
+body {
+  font-family: "Manrope";
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size:1rem;
-  gap:1rem;
-  
+  font-size: 1rem;
+  gap: 1rem;
+  background: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
 }
 
 .toggle {
-  display:flex;
+  display: flex;
   align-items: center;
-  margin-left:21rem;
-   
+  margin-left: 21rem;
+
 }
 
 .dark-mode {
-  
+  /* background: radial-gradient(170deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%); */
   background-color: black;
-  color:white;
+  color: white;
+
   a {
-    color:white;
+    color: white;
   }
+
 }
 
 a {
   text-decoration: none;
-  color:#33354D
+  color: #33354D
 }
 
 a:hover {
-  color:gray;
+  color: gray;
 }
 
 li {
@@ -75,110 +152,119 @@ li {
 
 
 .cardstyles2 {
-  display:flex;
+  display: flex;
   align-items: center;
   gap: 3rem;
   margin-left: 22rem;
-  margin-top:3rem;
-  }
+  margin-top: 3rem;
+}
 
 
 
- 
+
 .silicon {
-  margin-right:10rem;
-    
+  margin-right: 2rem;
+
 }
 
 #Features {
-  font-weight:600;
-  font-size:1rem;
-  margin-right:5rem;
-  
-  
-  }
- 
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: .5rem;
+
+
+}
+
 .ManageMoney {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left:26rem;
-  max-width:500px;
-  font-size:3rem;
-  font-weight:800;
+  margin-left: 26rem;
+  max-width: 500px;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 8rem;
+
 
 }
 
 .Weoffer {
 
-  font-size:18px;
-  margin-left:26rem;
-  max-width:30rem;
+  font-size: 18px;
+  margin-left: 26rem;
+  max-width: 30rem;
   font-weight: normal;
-  margin-bottom:0;
-  
+  margin-bottom: 0;
+
 }
 
 .appstoresetup {
-  
-display: flex;
-align-items: center;
-justify-content: center;
-margin-left:21rem;
-margin-top:3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 21rem;
+  margin-top: 3rem;
 
 }
+
+.telefoner {
+  margin-top: 20rem;
+}
+
+
 
 .discovery {
 
-margin-top:8rem;
-margin-left:38rem;
-border-radius: 50%;
-opacity: 100%;
-padding:.5rem;
-background-color: #ffff;
+  align-items: center;
+  margin-top: 15rem;
+  margin-left: 50%;
+  border-radius: 50%;
+  opacity: 100%;
+  padding: .5rem;
+  background-color: #ffff;
 
-  
+
 }
 
 .discovermoretext {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 
 .googleplay {
 
-margin-left:1rem;
+  margin-left: 1rem;
 }
 
 .hero {
 
-  position:flex;
-  margin-left:10rem;
- 
-    
+  position: flex;
+  margin-left: 10rem;
+
 }
 
 .signup {
-  display:flex;
+  display: flex;
   align-items: center;
   border: 1rem #6366F1;
   background-color: #6366F1;
   border-radius: .3rem;
-  padding: 0.9rem 1.9rem;
-  max-width:10rem;
-    
+  padding: 0.5rem 0.9rem;
+  max-width: 10rem;
+
 }
 
 .signup a {
-  display:flex;
+  display: flex;
   align-items: center;
-  color:#ffff;
-  width:5.5rem;
-    
+  color: #ffff;
+  width: 5.5rem;
+
+
 }
 
 .switch {
@@ -186,18 +272,18 @@ margin-left:1rem;
   display: inline-block;
   width: 60px;
   height: 34px;
-  }
+}
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
 .slider-text {
-  margin-right:.5rem;
+  margin-right: .5rem;
   font-weight: 500;
-      
+
 }
 
 .slider {
@@ -210,7 +296,7 @@ margin-left:1rem;
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
-  
+
 }
 
 .slider:before {
@@ -223,27 +309,27 @@ margin-left:1rem;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-  
+
 }
 
 
- .slider.round {
+.slider.round {
   border-radius: 34px;
- }
+}
 
- .slider.round:before {
-  border-radius:50%;
- }
- 
- input:checked + .slider {
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked+.slider {
   background-color: #2196F3;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -251,77 +337,301 @@ input:checked + .slider:before {
 
 .section2 {
   background-color: #ffff;
+  display: flex;
+  padding-bottom: 5rem;
 
 }
- 
+
+.howdoesitwork {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.transactionhistory {
+
+  text-align: center;
+  justify-content: center;
+  display: Flex;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.textundertransaction {
+  text-align: center;
+  max-width: 650px;
+  margin-left: 35%;
+  margin-bottom: 2rem;
+  color: #565973;
+
+
+}
+
 .card {
-  
-  display:flex;
+
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid;
   border-radius: 0.4rem;
   background-color: white;
   padding: 2rem 2rem;
-  height:100px;
-  width:200px;  
+  height: 100px;
+  width: 200px;
 }
 
-/* #card3 {
-  padding:.4rem;
-} */
 
 .phonevisacard {
 
-  display:flex;
+  display: flex;
   align-items: Center;
-  gap:25rem;
-  margin-left:21rem;
-  margin-top:3rem;
+  gap: 25rem;
+  margin-left: 21rem;
+  margin-top: 3rem;
 }
 
 .textwithinformation {
   display: grid;
   grid-row: auto;
   font-size: 2.5rem;
-     
+
 }
 
 .textwithicons {
-  display:grid;
-  font-size:1.5rem;
-  font-weight:bold;
+  display: grid;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .informationtext {
-  font-size:1rem;
+  font-size: 1rem;
   max-width: 39rem;
-  margin-bottom:2rem;
-  margin-top:1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
   font-weight: 100;
   align-items: center;
   color: #9397AD
 }
 
 .iconcontainer {
-display:grid;
-grid-template-columns: auto 1fr;
- 
-align-items: center;
-margin-right:25rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  align-items: center;
+  margin-right: 25rem;
 
 }
 
 .iconcontainer img {
   max-width: 100px;
-  height:auto;
-  margin-right:0
+  height: auto;
+  margin-right: 0
+}
+
+.section4 {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ffff;
+  padding-top: 2rem;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+#h1text {
+
+  font-weight: 800;
+  max-width:400px;
+  margin-top:4rem;
+
+}
+
+
+.checkbox {
+
+  align-items: center;
+  border-radius: 50%;
+  opacity: 100%;
+  padding: .1rem;
+  border: 2px solid;
+
+}
+
+.paymentsinternational {
+
+display: flex;
+flex-direction: column;
+
+}
+
+.cardandwallet {
+  display: flex;
+  gap:2.5rem;
+  margin-top:2rem;
+  
+}
+
+
+
+.fa-solid {
+  color: #6366F1;
+
+  font-weight: normal;
+
+}
+
+.fa-solid-fa-arrow-right {
+
+  background-color: #007bff;
+  /* Blue background */
+  color: white;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Adjusts the size of the button */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  border-radius: 5px;
+  /* Slightly rounded corners */
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+
 }
 
 
 
 
+#learnmore {
+  color: #fff;
+  border: 1rem #6366F1;
+  background-color: #6366F1;
+  border-radius: .3rem;
+  padding: .5rem;
+  max-width: 200px;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  i {
+    color: #fff;
+    margin-left: 0.5rem;
+  }
+
+}
+
+.section44 {
+
+  display: grid;
+  align-items: center;
+
+}
+
+.section5 {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  padding-right:3rem;
+  gap: 1.5rem;
+  max-width: 1300px;
+  margin-inline: auto;
+
+
+}
+
+.checkboxarticle {
+  
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 15%;
+}
+
+
+.clients {
+
+  font-size: 2.9rem;
+  font-weight: 800;
+  
+}
+
+.quote1 {
+  position:relative;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  border-radius: 2%;
+  padding: 2rem;
+  border: 1rem;
+  background-color: white;
+}
+
+.paddingtop {
+
+  padding-top:1rem;
+
+}
+
+.quoteicon {
+  position: absolute;
+  top:-25px;
+  left:35px;
+}
+
+.summersfannie {
+
+  display: flex;
+  padding-top: 2rem;
+
+}
+
+.floresalbert {
+
+  display: flex;
+  padding-top: 2rem;
+
+}
+
+.designerfannie {
+
+  margin-right: 3rem;
+  color: #9397AD;
+
+}
+
+.albertflores1 {
+
+
+  color: #9397AD;
+  margin-top: 0;
+  margin-left: 5rem;
+  margin-bottom: 0;
+}
 
 
 
+.gold {
 
+  color: #FFBA08
+}
