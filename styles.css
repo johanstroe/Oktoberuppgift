@@ -445,17 +445,9 @@ input:checked+.slider:before {
 }
 
 .section4 {
-
+  background-color: #fff;
   box-sizing: border-box;
-  min-height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #ffff;
-  padding-top: 2rem;
-
-  max-width: 1300px;
-  margin-inline: auto;
+    
 }
 
 #h1text {
@@ -466,6 +458,16 @@ input:checked+.slider:before {
 
 }
 
+
+
+.section4grid {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ffff;
+  padding-top: 2rem;
+  margin-inline: auto;
+}
 
 .checkbox {
 
@@ -570,6 +572,7 @@ input:checked+.slider:before {
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 15%;
+  max-width: 1300px;
 }
 
 
@@ -743,44 +746,60 @@ input[type="submit"] {
   flex: 1;
 }
 
-}
-
 .accordion {
-  background-color: #eee;
-  color: #0B0F19;
+  background-color: white;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
   text-align: left;
-  border: none;
-  outline: none;
   transition: 0.4s;
-
+  font-size: 15px;
+  font-weight:600;
+  box-shadow: 0 0 3px;
+  border-style: none;
+  width:800px;
+  border-radius: 10px;
+  
 }
 
-.active,
-.accordion:hover {
-  background-color: #cccccc63;
+#testid { 
+  background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  transition: 0.4s;
+  font-size: 15px;
+  font-weight:600;
+  box-shadow: 0 0 3px;
+  border-style: none;
+  width:800px;
+  border-radius: 10px;
+  
 }
 
-.accordion:after {
-  content: '\02795';
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
 }
 
-.active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
-}
-
-
+/* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  background-color: rgb(160, 0, 0);
-  display: none;
+  
+  border-style:none;
+  background-color: white;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.4s;
+  font-size: 15px;
+  font-weight:600;
+  box-shadow: 0 0 3px;
+  border-style: none;
+  margin-bottom: 1rem;
+  width:600px;
+  border-radius: 10px;
+  padding-left:1rem;
+  
 }
