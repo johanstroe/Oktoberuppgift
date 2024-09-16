@@ -6,15 +6,12 @@
   margin: 0;
   -webkit-tap-highlight-color: black;
   font-family: "Manrope";
-
-
 }
-
 
 .sida1 {
 
   /* background-color: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%); */
-  display: grid;
+  display:grid;
   grid-template-columns: auto 1fr auto auto;
   align-items: center;
   justify-content: center;
@@ -22,44 +19,93 @@
   margin-top: 1.5rem;
   margin-left: 20rem;
   margin-right: 20rem;
-
-
-
 }
-
-#item1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-#item2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
 
 .section1 {
 
-  margin-top: 0;
-  align-items: center;
-  display: flex;
+  display: flex;  
+  align-items: flex-end;
   background: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+  padding-right:2rem;
 }
 
 
-.title2 {
+.herophone1 {
+ margin-right: 2rem;
+ align-items: center;
+  
+}
+
+.managemoneytextsetup {
+
+ justify-content: center;
+ font-size: 56px;
+ text-align: left;
+ margin-top:8rem;
+ margin-left:20rem;
+
+}
+
+
+.weoffer {
+
+  font-size: 18px;
+  font-weight: normal;
+  
+}
+
+.appandgoogleplay {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top:10rem;
+margin-left:10rem;
+gap:2rem;
+
+}
+
+
+.discovery {
+
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 50%;
+  border-radius: 50%;
+  opacity: 100%;
+  padding: .5rem;
+  background-color: #ffff;
+
+}
+
+.discovermoretext {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: .5rem;
-  margin-right: 10rem;
 
 }
 
-.headlinetext {
-  font-weight: 800;
-  font-size: 20px;
+#Features {
+  font-weight: 600;
+
+}
+
+.section2 {
+  background-color: #ffff;
+  display: flex;
+  padding-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.title2 {
+  display: flex;
+  text-align: left;
+  margin-left:15rem;
+  margin-top: 3rem;
+  margin-bottom: .5rem;
+  font-size:40px;
+  font-weight:800;
 }
 
 .Apptext {
@@ -68,12 +114,20 @@
   margin-bottom: 2rem;
   font-size: 1rem;
   color: #9397AD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
+.headlinetext {
+  font-weight: 800;
+  font-size: 20px;
+}
 
 .gridcolumns {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-top: 3rem;
   margin-left: 16rem;
@@ -151,96 +205,40 @@ li {
 
 
 
-.cardstyles2 {
+.cardstyles {
   display: flex;
   align-items: center;
   gap: 3rem;
   margin-left: 22rem;
   margin-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 
 
 
-.silicon {
-  margin-right: 2rem;
 
+
+.appstore {
+  margin-left: 1rem;
+  border: 1rem;
+  border-radius: .3rem;
+  width: 10rem;
+  background-color: black;
+  padding: 0.5rem;
 }
-
-#Features {
-  font-weight: 600;
-  font-size: 1rem;
-  margin-left: .5rem;
-
-
-}
-
-.ManageMoney {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 26rem;
-  max-width: 500px;
-  font-size: 3rem;
-  font-weight: 800;
-  margin-top: 8rem;
-
-
-}
-
-.Weoffer {
-
-  font-size: 18px;
-  margin-left: 26rem;
-  max-width: 30rem;
-  font-weight: normal;
-  margin-bottom: 0;
-
-}
-
-.appstoresetup {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 21rem;
-  margin-top: 3rem;
-
-}
-
-.telefoner {
-  margin-top: 20rem;
-}
-
-
-
-.discovery {
-
-  align-items: center;
-  margin-top: 15rem;
-  margin-left: 50%;
-  border-radius: 50%;
-  opacity: 100%;
-  padding: .5rem;
-  background-color: #ffff;
-
-
-}
-
-.discovermoretext {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
 
 .googleplay {
 
   margin-left: 1rem;
+  border: 1rem;
+  border-radius: .3rem;
+  width: 10rem;
+  background-color: black;
+  padding: 0.5rem;
 }
 
-.hero {
+.heropage2 {
 
   position: flex;
   margin-left: 10rem;
@@ -335,12 +333,7 @@ input:checked+.slider:before {
   transform: translateX(26px);
 }
 
-.section2 {
-  background-color: #ffff;
-  display: flex;
-  padding-bottom: 5rem;
 
-}
 
 .howdoesitwork {
   display: flex;
@@ -348,13 +341,6 @@ input:checked+.slider:before {
   justify-content: center;
   margin-bottom: 4rem;
   margin-top: 2rem;
-}
-
-.section3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
 
 .image-container {
@@ -370,14 +356,14 @@ input:checked+.slider:before {
   justify-content: center;
   display: Flex;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .textundertransaction {
   text-align: center;
   max-width: 650px;
   margin-left: 35%;
-  margin-bottom: 2rem;
+  padding-bottom: 4rem;
   color: #565973;
 
 
@@ -444,10 +430,15 @@ input:checked+.slider:before {
   margin-right: 0
 }
 
+.section3 {
+  background:#F3F6FF
+}
+
+
 .section4 {
   background-color: #fff;
   box-sizing: border-box;
-    
+
 }
 
 #h1text {
@@ -554,7 +545,7 @@ input:checked+.slider:before {
 }
 
 .section5 {
-
+  background:#F3F6FF;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 6rem;
@@ -573,13 +564,20 @@ input:checked+.slider:before {
   grid-template-columns: auto auto;
   margin-top: 15%;
   max-width: 1300px;
+  gap:1rem;
+  margin-bottom: 1rem;
 }
 
+.moneytextspan {
+  margin-top:1rem;
+}
 
 .clients {
 
-  font-size: 2.9rem;
+  font-size: 40px;
   font-weight: 800;
+  width:80%;
+  margin-right:4rem;
 
 }
 
@@ -736,7 +734,7 @@ input:checked+.slider:before {
 input[type="email"] {
   padding: 10px;
   font-size: 16px;
-  
+
 }
 
 input[type="submit"] {
@@ -746,45 +744,117 @@ input[type="submit"] {
   flex: 1;
 }
 
-.accordion {
+/* .accordion {
   background-color: white;
   cursor: pointer;
   padding: 18px;
   text-align: left;
   transition: 0.4s;
   font-size: 15px;
-  font-weight:600;
+  font-weight: 600;
   box-shadow: 0 0 3px;
   border-style: none;
-  width:800px;
+  width: 800px;
   border-radius: 10px;
-  
+
+} */
+
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
-#testid { 
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-label {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.accordion-label:hover {
+  background-color: #eee;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+  max-height: 150px; /* Adjust based on content */
+  padding: 15px;
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
+#testid {
   background-color: white;
   cursor: pointer;
-  padding: 18px;
   text-align: left;
   transition: 0.4s;
   font-size: 15px;
-  font-weight:600;
+  font-weight: 600;
   box-shadow: 0 0 3px;
   border-style: none;
-  width:800px;
-  border-radius: 10px;
-  
+  width: 84%;
+  border-radius:10px;
+
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #ccc;
 }
 
+.accordion::after {
+  content: '\25BC'; /* Unicode for down arrow */
+  font-size: 12px;
+  position: absolute;
+  right: 10px; /* Align to the right */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the arrow */
+  transition: transform 0.3s ease;
+}
+
+.accordion.active::after {
+  transform: translateY(-50%) rotate(180deg); /* Rotate the arrow up */
+}
+
+.fa-solid-fa-chevron-down {
+
+margin-left:100%;
+}
+
+
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  
-  border-style:none;
+
+  border-style: none;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -794,12 +864,12 @@ input[type="submit"] {
   text-align: left;
   transition: 0.4s;
   font-size: 15px;
-  font-weight:600;
+  font-weight: 600;
   box-shadow: 0 0 3px;
   border-style: none;
   margin-bottom: 1rem;
-  width:600px;
+  width: 600px;
   border-radius: 10px;
-  padding-left:1rem;
-  
+  padding-left: 1rem;
+
 }
