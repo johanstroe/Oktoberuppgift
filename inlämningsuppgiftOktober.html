@@ -11,81 +11,84 @@
 </head>
 
 <nav class="sida1">
-  <a href="#"><img class="silicon" src="/images/silicon.svg" alt="">
-  </a>
-  <a id="Features" href="#"><span>Features</span>
-  </a>
+  <div class="flexbox">
+    <a href="#"><img class="silicon" src="/images/silicon.svg" alt="">
+    </a>
+    <a id="Features" href="#"><span>Features</span>
+    </a>
+  </div>
+  <div class="flexbox">
+    <li class="toggle"><span class="slider-text">Dark Mode</span>
+      <label class="switch">
+        <input type="checkbox" onclick="darkmodetoggle()">
+        <span class="slider round"></span>
+      </label>
+    </li>
 
-  <li class="toggle"><span class="slider-text">Dark Mode</span>
-    <label class="switch">
-      <input type="checkbox" onclick="darkmodetoggle()">
-      <span class="slider round"></span>
-    </label>
-  </li>
-
-  <li class="signup"><img src="images/signupicon.svg" alt="sign up icon"><a href=#>Sign in / up</a>
-  </li>
+    <li class="signup"><img src="images/signupicon.svg" alt="sign up icon"><a href=#>Sign in / up</a>
+    </li>
+  </div>
 </nav>
 
 <section class="section1">
   <div class="sortering1">
-    <div class="managemoneytextsetup">
-      <h1 class="ManageMoney">Manage All Your</h1>
-      <h1 class="ManageMoney">Money in One App</h1>
-      <p class="weoffer">We offer you a new generation of the mobile banking.
-      <p class="weoffer">Save, spend & manage money in your pocket</p>
-      </p>
+    <div class="titletext">
+      <h1 class="managemoney"> Manage All Your Money in One App</h1>
+      <p class="weoffer"> We offer you a new generation of the mobile banking.</p>
+      <p class="weoffer"> Save, spend & manage money in your pocket</p>
     </div>
-    <div class="appandgoogleplay">
-      <a href="#"><img class="appstore" src="images/apple-store.svg" alt="button to appstore"></a>
-      <a href="#"><img class="googleplay" src="images/google-play.svg" alt="button to Google Play"></a>
+    <div class="content">
+      <div class="appandgoogleplay">
+        <a href="#"><img class="appstore" src="images/apple-store.svg" alt="button to appstore"></a>
+        <a href="#"><img class="googleplay" src="images/google-play.svg" alt="button to Google Play"></a>
+      </div>
+
+      <a href=""><img class="discovery" src="/images/discovermore.svg"
+          alt="a small arrow to press discover more">Discover more
+      </a>
     </div>
 
-    <a href=""><img class="discovery" src="/images/discovermore.svg"
-        alt="a small arrow to press discover more">Discovermore</a>
-  </div>
-  <div class="herophone">
-    <img src="images/telefoner.svg" alt="Two phones displaying personal economy">
+    <div class="herophone">
+      <img class="twophones" src="images/telefoner.svg" alt="Two phones displaying personal economy">
+    </div>
   </div>
 </section>
-</header>
+
 
 <div class="cardstyles">
 
   <div class="card">
-    <li>
-      <img src="/images/ipsum1.svg" alt="Logo1">
-    </li>
+
+    <img src="/images/ipsum1.svg" alt="Logo1">
+
   </div>
 
   <div class="card">
-    <li>
-      <img src="/images/ipsum2.svg" alt="Logo1">
-    </li>
+
+    <img src="/images/ipsum2.svg" alt="Logo1">
+
   </div>
 
   <div class="card">
-    <li>
-      <img id="card3" src="/images/ipsum3.svg" alt="Logo1">
-    </li>
+
+    <img id="card3" src="/images/ipsum3.svg" alt="Logo1">
   </div>
 
   <div class="card">
-    <li>
-      <img src="/images/ipsum4.svg" alt="Logo1">
-    </li>
+
+    <img src="/images/ipsum4.svg" alt="Logo1">
+
   </div>
 
   <div class="card">
-    <li>
-      <img src="/images/ipsum5.svg" alt="Logo1">
-    </li>
+
+    <img src="/images/ipsum5.svg" alt="Logo1">
+
   </div>
 
   <div class="card">
-    <li>
-      <img src="/images/ipsum6.svg" alt="Logo1">
-    </li>
+
+    <img src="/images/ipsum6.svg" alt="Logo1">
   </div>
 </div>
 
@@ -94,12 +97,12 @@
     <img src="/images/phonevisa.svg" alt="Phone with a visa card on top">
   </div>
 
-  <section>
+  <section class="sortering2">
     <div class="Appfeatures">
       <h1 class="title2">App Features</h1>
-      <p class="Apptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat Mollis egestas. Nam
-        luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.
     </div>
+    <p class="Apptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat Mollis egestas. Nam
+      luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.
 
     <div class="gridcolumns">
       <div class="itemclass" id="item1">
@@ -190,7 +193,7 @@
         alt="picture of september forecast with emojis to send money to">
     </div>
 
-    <div>
+    <div class="contactsvisa">
       <img id="img1" src="/images/contacts.svg" alt="">
     </div>
 
@@ -292,20 +295,22 @@
 
   <!-- Grundkodning till accordion satt av w3schools. -->
 
-  <div class="accordionsettings">
-    <button class="accordion">Is any of my personal information stored in the App?</button>
-    <div class="panel">
-      <p>Yes but its only accessible to people in Hogwarts</p>
-    </div>
 
-    <button class="accordion">What formats can I download my transaction history in?</button>
-    <div class="panel">
-      <p class="accordiontext">We dont use formats in Hogwarts...</p>
-    </div>
+  <div class="accordiondropdown">
+    <div class="accordionsettings">
+      <button class="accordion">Is any of my personal information stored in the App?</button>
+      <div class="panel">
+        <p>Yes but its only accessible to people in Hogwarts</p>
+      </div>
 
-    <div class="testingtesting">
+      <button class="accordion">What formats can I download my transaction history in?</button>
+      <div class="panel">
+        <p class="accordiontext">We dont use formats in Hogwarts...</p>
+      </div>
+
+
       <button class="accordion"> <span>Can I schedule future transfers?</span>
-        <i class="fa-solid fa-chevron-down"></i></button>
+        <i class="fa-solid-fa-chevron-down"></i></button>
       <div id="testid" class="panel">
         <p class="accordiontext">Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
           viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
@@ -313,19 +318,20 @@
           purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse
           ut consequat.</p>
       </div>
-    </div>
 
-    <button class="accordion">When can I use Banking App services?</button>
-    <div class="panel">
-      <p class="accordiontext">Only when professor dumbledore requests ur face:id</p>
-    </div>
-    <button class="accordion">Can I create my own password that is easy for me to remember?</button>
-    <div class="panel">
-      <p class="accordiontext">Avada kedavr... I mean sure.</p>
-    </div>
-    <button class="accordion">What happens if I forget or lose my password?</button>
-    <div class="panel">
-      <p class="accordiontext">I guess someone used obliviate on you. Oh well..</p>
+
+      <button class="accordion">When can I use Banking App services?</button>
+      <div class="panel">
+        <p class="accordiontext">Only when professor dumbledore requests ur face:id</p>
+      </div>
+      <button class="accordion">Can I create my own password that is easy for me to remember?</button>
+      <div class="panel">
+        <p class="accordiontext">Avada kedavr... I mean sure.</p>
+      </div>
+      <button class="accordion">What happens if I forget or lose my password?</button>
+      <div class="panel">
+        <p class="accordiontext">I guess someone used obliviate on you. Oh well..</p>
+      </div>
     </div>
   </div>
 
@@ -350,7 +356,10 @@
 
 </div>
 <footer>
-
+<div class="footercontainer">
+  <p class="copyright">© 2024 Silicon. All rights reserved. </p>
+  <p class="creditmadras">Credit MadrasThemes</p>
+</div>
 </footer>
 
 <script src="javascript.js"></script>
