@@ -32,6 +32,7 @@
   background: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
   align-items: center;
   justify-content: center;
+
 }
 
 .sortering1 {
@@ -39,8 +40,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "titletext herophone"
-    "content   herophone"
-
+                       "content   herophone";
+    max-width: 1200px;
+    margin-inline: auto;
+ 
 }
 
 
@@ -51,7 +54,6 @@
 
 .titletext {
   grid-area: titletext;
-  margin-top: 12rem;
   font-size: 36px;
   text-align: left;
   justify-content: center;
@@ -62,7 +64,7 @@
 
  text-align: left;
  align-items: center;
- margin-left: 10%;
+ max-width: 500px;
 }
 
 .content {
@@ -75,7 +77,6 @@
 .weoffer {
   text-align: left;
   justify-content: center;
-  margin-left: 4rem;
   font-size: 18px;
   font-weight: normal;
   max-width: 480px;
@@ -83,15 +84,16 @@
 }
 
 .twophones {
-  margin-right:5rem;
+
+  max-width: 600px;
 }
 
 .appandgoogleplay {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 10rem;
   gap: 2rem;
+  margin-bottom: 7rem;
+ 
 
 }
 
@@ -102,10 +104,14 @@
   border-radius: 50%;
   padding: .5rem;
   background-color: #ffff;
-  margin-top: 4rem;
-  margin-left: 20rem;
   justify-content: center;
 
+}
+
+.discoverstyling {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 .discovermoretext {
@@ -127,6 +133,8 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 5rem;
+  max-width: 1300px;
+  margin-inline: auto;
 
 
 }
@@ -235,7 +243,7 @@ li {
 .cardstyles {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   padding: 3rem;
   padding-bottom: 10rem;
 
@@ -248,17 +256,15 @@ li {
 
 
 .appstore {
-  margin-left: 1rem;
+  
   border: 1rem;
   border-radius: .3rem;
-  width: 10rem;
   background-color: black;
   padding: 0.5rem;
 }
 
 .googleplay {
 
-  margin-left: 1rem;
   border: 1rem;
   border-radius: .3rem;
   width: 10rem;
@@ -562,6 +568,7 @@ input:checked+.slider:before {
 
 }
 
+
 .checkboxarticle {
 
   margin-left:5rem;
@@ -715,6 +722,7 @@ input:checked+.slider:before {
   border-style: none;
   box-shadow: 0 0 2px;
   width: 200px;
+  margin-right:1rem;
 }
 
 
@@ -724,7 +732,7 @@ input:checked+.slider:before {
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
-  margin-right: 14rem;
+  margin-right: 20rem;
 }
 
 .bellandsubscription {
@@ -734,13 +742,8 @@ input:checked+.slider:before {
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 5rem;
+  margin:0 5%;
 
-}
-
-.emailsubscribe {
-
-  display: flex;
-  align-items: center;
 }
 
 input[type="email"] {
@@ -858,4 +861,6 @@ accordion-content p {
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+  background-color: white;
+  padding: 2rem;
 }
