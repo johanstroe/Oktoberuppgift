@@ -14,8 +14,10 @@
   display: grid;
   grid-template-columns: 1fr auto;
   justify-content: space-between;
-  padding: 1.5rem 10%;
-
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
 }
 
 .flexbox {
