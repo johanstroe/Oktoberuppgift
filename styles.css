@@ -32,6 +32,7 @@
   background: linear-gradient(365deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
   align-items: center;
   justify-content: center;
+  
 
 }
 
@@ -41,7 +42,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "titletext herophone"
                        "content   herophone";
-    max-width: 1200px;
+    max-width: 1300px;
     margin-inline: auto;
  
 }
@@ -242,11 +243,11 @@ li {
 
 .cardstyles {
   display: flex;
-  align-items: center;
   gap: 2rem;
   padding: 3rem;
   padding-bottom: 10rem;
-
+  max-width: 1300px;
+  margin-inline: auto;
 
 }
 
@@ -381,14 +382,15 @@ input:checked+.slider:before {
 
 .image-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  max-width: 1300px;
+  margin-inline:auto;
 
 }
 
 .transactionhistory {
 
-  text-align: center;
+  
   justify-content: center;
   display: Flex;
   margin-bottom: 1rem;
@@ -405,6 +407,11 @@ input:checked+.slider:before {
   font-size:16px;
 
 
+}
+
+.textpage3 {
+  max-width: 1300px;
+  margin-inline:auto;
 }
 
 .card {
@@ -555,6 +562,10 @@ input:checked+.slider:before {
 }
 
 .section5 {
+  background-color: #F3F6FF;
+}
+
+.section5styling {
   background: #F3F6FF;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -654,13 +665,27 @@ input:checked+.slider:before {
 }
 
 .section6 {
+  background-color: #fff;
+}
+
+.section7 {
+ background-color:#fff; 
+}
+
+.section6styling {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 4rem;
   background-color: #fff;
   padding-bottom: 4rem;
+  max-width: 1300px;
+  margin-inline:auto;
 
+   @media (max-width: 768px) {
+  @media (max-width: 1300px) 
+    
+  }
 }
 
 .anyquestions {
@@ -725,6 +750,7 @@ input:checked+.slider:before {
   margin-right:1rem;
 }
 
+.emailsubscribe
 
 
 .subscription {
@@ -736,14 +762,15 @@ input:checked+.slider:before {
 }
 
 .bellandsubscription {
-
+  padding-top: .5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 5rem;
-  margin:0 5%;
-
+  max-width: 1300px;
+  margin-inline:auto;
+  background-color: #F3F6FF;
 }
 
 input[type="email"] {
