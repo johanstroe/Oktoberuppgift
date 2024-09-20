@@ -677,18 +677,14 @@ input:checked+.slider:before {
 .section6styling {
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   padding-top: 4rem;
   background-color: #fff;
   padding-bottom: 4rem;
   max-width: 1300px;
   margin-inline:auto;
-
-   @media (max-width: 768px) {
-  @media (max-width: 1300px) 
-    
-  }
 }
+
 
 .anyquestions {
   align-items: center;
@@ -752,9 +748,6 @@ input:checked+.slider:before {
   margin-right:1rem;
 }
 
-.emailsubscribe
-
-
 .subscription {
   display: flex;
   align-items: center;
@@ -763,7 +756,7 @@ input:checked+.slider:before {
   margin-right: 20rem;
 }
 
-.bellandsubscription {
+.subscribenewsletter {
   padding-top: .5rem;
   display: flex;
   align-items: center;
@@ -787,82 +780,53 @@ input[type="submit"] {
   cursor: pointer;
   flex: 1;
 }
- .accordion {
-  background-color: white;
+
+/* Accordion css skriven av chatgpt */
+
+.accordion {
+  background-color: #fff;
   cursor: pointer;
   padding: 18px;
   text-align: left;
-  transition: 0.4s;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 0 3px;
-  border-style: none;
-  width: 500px;
-  border-radius: 10px; 
-   
- 
-
- } 
-
-
-
-accordion-item {
-  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s ease;
 }
 
-.accordion-item:last-child {
-  border-bottom: none;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-.accordion-label {
-  display: block;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
+.accordion details {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
   background-color: #f9f9f9;
 }
 
-.accordion-label:hover {
-  background-color: #eee;
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding: 0 15px;
-}
-
-input[type="checkbox"]:checked~.accordion-content {
-  max-height: 150px;
-  /* Adjust based on content */
-  padding: 15px;
- } 
-
-accordion-content p {
-  margin: 0;
-} */ */
-
-#testid {
-  background-color: white;
+.accordion summary {
+  font-weight: bold;
   cursor: pointer;
-  text-align: left;
-  transition: 0.4s;
-  font-size: 15px;
-  font-weight: 600;
-  box-shadow: 0 0 3px;
-  border-style: none;
-  width: 84%;
-  border-radius: 10px;
-
 }
 
-/* Style the accordion panel. Note: hidden by default */
+.accordion p {
+  margin-top: 10px;
+}
+
+details[open] summary {
+  background-color: #e0e0e0;
+}
+
+.accordion:hover {
+  background-color: #f1f1f1;
+}
+
+.accordion.active {
+  background-color: #e2e5f1;
+}
+
 .panel {
 
   border-style: none;
@@ -885,11 +849,11 @@ accordion-content p {
 
 }
 
-.footercontainer {
+ .footercontainer {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
   background-color: white;
   padding: 2rem;
-}
+} 

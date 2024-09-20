@@ -4,6 +4,8 @@ function darkmodetoggle() {
   element.classList.toggle("dark-mode");
 }
 
+// javascript skrivet av w3schools
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
