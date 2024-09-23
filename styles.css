@@ -790,7 +790,6 @@ input[type="submit"] {
   text-align: left;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   border: none;
   width: 100%;
   border-radius: 10px;
@@ -823,8 +822,14 @@ details[open] summary {
   background-color: #f1f1f1;
 }
 
-.accordion.active {
-  background-color: #e2e5f1;
+.accordion-header::after {
+  content: '\25BC'; /* Nedåtpil */
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active {
+  content: '\25B2'; /* Uppåtpil */
 }
 
 .panel {
@@ -840,7 +845,7 @@ details[open] summary {
   transition: 0.4s;
   font-size: 15px;
   font-weight: 400;
-  box-shadow: 0 0 3px;
+  /* box-shadow: 0 0 3px; */
   border-style: none;
   margin-bottom: 1rem;
   width: 600px;
@@ -857,3 +862,9 @@ details[open] summary {
   background-color: white;
   padding: 2rem;
 } 
+
+.TEST {
+  
+  box-shadow: 0 0 4.4px #131022;
+
+}
