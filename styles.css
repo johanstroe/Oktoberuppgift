@@ -253,11 +253,6 @@ li {
 
 }
 
-
-
-
-
-
 .appstore {
 
   border: 1rem;
@@ -597,11 +592,7 @@ input:checked+.slider:before {
 .checkboxarticle {
 
   margin-left: 5rem;
-  display: grid;
-  grid-template-columns: auto auto;
   margin-top: 15%;
-  max-width: 1300px;
-  gap: 1rem;
 
 }
 
@@ -680,6 +671,7 @@ input:checked+.slider:before {
 
 .section6 {
   background-color: #fff;
+  
 }
 
 .section7 {
@@ -693,7 +685,7 @@ input:checked+.slider:before {
   padding-top: 4rem;
   background-color: #fff;
   padding-bottom: 4rem;
-  max-width: 1300px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -782,7 +774,7 @@ input:checked+.slider:before {
   padding: .5rem;
   border-radius: .5rem;
   border-style: none;
-  box-shadow: 0 0 2px;
+  box-shadow: 0 0 .5px;
   width: 200px;
   margin-right: 1rem;
 }
@@ -802,7 +794,7 @@ input:checked+.slider:before {
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 5rem;
-  max-width: 1300px;
+  max-width: 1200px;
   margin-inline: auto;
   background-color: #F3F6FF;
   border-radius: .5rem;
@@ -821,7 +813,7 @@ input[type="submit"] {
   flex: 1;
 }
 
-/* Accordion css skriven av chatgpt */
+/* Accordion css skriven av chatgpt , modifierad av mig*/
 
 .accordion {
   background-color: #fff;
@@ -834,6 +826,19 @@ input[type="submit"] {
   width: 100%;
   border-radius: 10px;
   transition: background-color 0.2s ease;
+  position:relative;
+
+}
+
+.accordionquestion {
+  font-weight:700;
+  font-size:16px;
+}
+
+.accordiontext {
+  padding:0 0 .5rem 0;
+  text-align: left;
+  color:#565973;
 }
 
 
@@ -855,22 +860,38 @@ details[open] summary {
 }
 
 .accordion::after {
-  content: "▼"; /* Pil nedåt */
-  font-size: 12px;
+  content: "";  /* Ingen pil genom text, vi använder en bild istället */
+  background-image: url('images/chevron-down.svg');
+  background-size:50%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  display:block;
   position: absolute;
-  right: 40px; /* Placera pilen till höger */
+  border-radius: 80%;
+  border:1px solid #fff;
+  background-color: #F3F6FF;
+  padding:.7rem; 
+  right: 21px; 
+  top:10px;
+  width:10px;
+  height:5px;
   transform: rotate(0deg); /* Standard rotation */
   transition: transform 0.3s ease; /* Smidig övergång */
 }
 
 .accordion.active::after {
   transform: rotate(180deg); /* Roterad pil när den är aktiv */
+  background-image: url('images/chevron-down-white.svg');
+  background-color: #6366F1;
+  background-size: 55%;
 }
 
 .myaccordion {
 
-  box-shadow: 0 0 4.4px #131022;
+  box-shadow: 0px 4.4px 9px -1px rgb(19,16,34,5);
   border-radius:8px;
+  
+  
 
 }
 
