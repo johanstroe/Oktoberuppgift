@@ -27,6 +27,11 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 4rem;
 
+  .silicon {
+
+    padding-top:.2rem;
+  }
+
   .flexbox {
 
     display: flex;
@@ -39,6 +44,8 @@ body {
       font-weight: 600;
 
     }
+
+    
 
   }
 
@@ -441,12 +448,13 @@ input:checked+.slider:before {
   display: Flex;
   margin-bottom: 1rem;
   margin-top: 2rem;
+  font-weight:800;
 }
 
 .textundertransaction {
   text-align: center;
   max-width: 650px;
-  margin-left: 22rem;
+  margin-left: 20rem;
   justify-content: center;
   padding-bottom: 4rem;
   color: #565973;
@@ -479,8 +487,9 @@ input:checked+.slider:before {
   border-radius: 50%;
   opacity: 100%;
   padding: .2rem;
-  border: 3px solid;
-  color: #6366F1
+  border: 2px solid;
+  color: #6366F1;
+  margin-right:.5rem;
 }
 
 .makeyourmoneytitle {
@@ -537,8 +546,8 @@ input:checked+.slider:before {
   border: 1rem #6366F1;
   background-color: #6366F1;
   border-radius: .5rem;
-  padding: .7rem;
-  max-width: 180px;
+  padding: .8rem;
+  max-width: 160px;
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -782,7 +791,7 @@ input:checked+.slider:before {
   border-radius: 0 .5em .5em 0;
   padding: .5rem;
   width: 142px;
-  height: 52px;
+  height: 53px;
   margin-right: 2rem;
 
 }
