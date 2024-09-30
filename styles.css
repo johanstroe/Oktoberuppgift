@@ -145,15 +145,19 @@ li {
   border-radius: .3rem;
   background-color: black;
   padding: 0.5rem;
+  height: 52px;
+  width:  180px;
 }
 
 .googleplay {
 
   border: 1rem;
   border-radius: .3rem;
-  width: 10rem;
   background-color: black;
   padding: 0.5rem;
+  height: 52px;
+  width:  180px;
+  
 }
 
 
