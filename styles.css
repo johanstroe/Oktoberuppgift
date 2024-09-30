@@ -330,12 +330,6 @@ input:checked+.slider:before {
   max-width: 1200px;
   margin-inline: auto;
 
-  .heropage2 {
-
-    margin-left: 5rem;
-
-  }
-
 }
 
 .section2 {
@@ -371,6 +365,19 @@ input:checked+.slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+
+#id2 {
+  margin-left:2rem;
+}
+
+#id3 {
+  margin-left:2rem;
+}
+
+#id6 {
+  margin-left:2rem;
+}
+
 }
 
 .itemclass {
